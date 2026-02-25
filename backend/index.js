@@ -271,11 +271,11 @@ socket.on("disconnect",()=>{
    for(const TypeOfAction in ResponseDisconnect){
   
     Make2[TypeOfAction](io,queeSet,ResponseDisconnect[TypeOfAction])
-     fetchRooms()
+    
    }
 
-   console.log(ResponseDisconnect)
-  
+    
+   fetchRooms()
   })
  
  
