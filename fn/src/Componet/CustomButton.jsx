@@ -1,0 +1,63 @@
+import React from 'react';
+import styled from 'styled-components';
+
+const CustomButton = () => {
+  return (
+    <StyledWrapper>
+      <div className="d3warpper">
+        <div className="cover">
+          <button className="buttonx">S</button>
+        </div>
+      </div>
+    </StyledWrapper>
+  );
+}
+
+const StyledWrapper = styled.div`
+  .cover {
+    background-color: rgb(0, 0, 0);
+    height: 64px;
+    width: 75px;
+    border-radius: 10px;
+    transform: rotateX(13deg);
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 11px;
+    box-shadow: 0px 1px 1px 1px white;
+  }
+  .buttonx {
+    cursor: pointer;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 4px 0px 0.2px rgb(116, 116, 116);
+    height: 60px;
+    width: 70px;
+    border-radius: 8px;
+    transform: rotateX(13deg);
+    z-index: 2;
+    position: absolute;
+    transition: 80ms;
+    color: rgb(0, 0, 0, 0.7);
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .d3warpper {
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1;
+  }
+  .button:active {
+    box-shadow: 0px 4px 0px 0.2px rgb(116, 116, 116, 0);
+    transform: translateY(4.5px);
+    transition: 80ms;
+  }`;
+
+export default CustomButton;

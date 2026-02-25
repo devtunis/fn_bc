@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /chat
+Disallow: /video
+Disallow: /private
+Disallow: /api
+Disallow: /admin
