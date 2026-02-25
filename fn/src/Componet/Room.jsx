@@ -64,7 +64,13 @@ useEffect(()=>{
   },[])
 const HandelMatching = async (data)=>{
 
+ if(!data.peerid){
+          socket.emit("start",socket.id)
 
+        return
+       }
+
+ 
   
         
         Proivder.current = data.type
