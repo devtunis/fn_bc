@@ -18,8 +18,8 @@ const io  = new Server(httpServer,{
     cors:{
         origin:"https://fn-bc.vercel.app"
     },
-    pingInterval: 2000,  
-    pingTimeout: 2000,  
+    pingInterval: 1000,  
+    pingTimeout: 1000,  
     cookie: false
 })
  
